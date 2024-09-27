@@ -1,0 +1,11 @@
+import java.util.*;
+class Pogram{
+    
+    public static void main(String args[]){
+        Date dt= new Date();
+        int day=dt.getDate();
+        int month=dt.getMonth()+1;
+        int year=dt.getYear()+1900;
+        System.out.println("Today Date is: "+day+"/"+month+"/"+year);
+    }
+}
