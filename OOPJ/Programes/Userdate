@@ -11,3 +11,30 @@ class HelloWorld {
 
     }
 }
+
+
+import java.util.*;
+class Date{
+    private int day;
+    private int month;
+    private int year;
+    
+   public void accept(){
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.print("Enter a day:\t");
+        this.day=sc.nextInt();
+        System.out.print("Enter a month:\t");
+         this.month=sc.nextInt();
+        System.out.print("Enter a year:\t");
+         this.year=sc.nextInt();
+   }
+    public void print(){
+        System.out.print("Date is: "+this.day+"/"+this.month+"/"+this.year);
+    }
+    public static void main(String args[]){
+    Date dt=new Date();
+    dt.accept();
+    dt.print();
+    }
+}
