@@ -1,5 +1,5 @@
 import java.util.*;
-class HelloWorld {
+class Array {
     public static void main(String[] args) {
         int []a=new int[10];
         System.out.println("Before insertion\n"+Arrays.toString(a));
