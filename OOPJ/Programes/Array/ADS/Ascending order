@@ -22,3 +22,27 @@ class SortAsc{
         }
     }
 }
+/********************************************\
+// By using Function //
+class Practice{
+    static int ascend(int[]a,int n){
+      int temp=0;
+      for(int i=0;i<n;i++){
+          for(int j=i+1;j<n;j++)
+          if(a[i]>a[j]){
+              temp=a[i];
+              a[i]=a[j];
+              a[j]=temp;
+          }
+      }
+      return n;
+    }
+    public static void main(String args[]){
+        int[]a={10,20,40,50,30};
+       // int length=a.length;
+        ascend(a,a.length);
+        for(int i=0;i<a.length;i++){
+            System.out.println(a[i]);
+        }
+    }
+}
