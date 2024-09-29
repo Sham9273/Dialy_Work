@@ -8,3 +8,35 @@ class Evenposition{
         }
     }
 }
+
+
+//********************************************************************\\
+
+class Program{
+   static int[] even(int[]a,int n){
+       
+       int count=(n+1)/2;
+       int[]evArray=new int[count];
+       
+       for(int i=1,j=0;i<n;i+=2,j++){
+          evArray[j]= a[i];
+       }
+       return evArray;
+   }
+   
+    public static void main(String args[]){
+        int[]a={1,2,3,4,5,6,7,8,9,10};
+        int[]a2=even(a,a.length);
+        
+        System.out.println("Array elements:");
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+        
+        System.out.println("\nEven Array elements:");
+        for(int i=0;i<a2.length;i++){
+            System.out.print(a2[i]+" ");
+        }
+       
+    }
+}
