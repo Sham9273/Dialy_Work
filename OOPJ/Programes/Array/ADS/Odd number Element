@@ -9,3 +9,32 @@ class OddElement{
         }
     }
 }
+
+//******************************************************************************//
+
+class Program{
+   static int[]odd(int[]a,int n){
+       int count=n/2;
+       int[]oddArray=new int[count];
+       
+       for(int i=0,j=0;i<n;i+=2,j++){
+           oddArray[j]=a[i];
+       }
+       return oddArray;
+   }
+   
+    public static void main(String args[]){
+        int[]a={1,2,3,4,5,6,7,8,9,10};
+        int[]a2=odd(a,a.length);
+        System.out.println("Array elements:");
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
+        
+        System.out.println("Odd Array elements:");
+        for(int i=0;i<a2.length;i++){
+            System.out.print(a2[i]+" ");
+        }
+       
+    }
+}
